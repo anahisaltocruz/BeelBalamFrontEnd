@@ -11,75 +11,53 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 	<link rel="icon" href="jaguar.ico">
 	<link rel="stylesheet" type="text/css" href="normalize.css">
+	
 </head>
 <body background="tulum.jpg">
 		<!--
 		el header se mantiene igual en todas las paginas
 		--> 
 		
-		<nav class="navbar navbar-expand-sm bg-secondary navbar-dark">
+		<nav class="navbar navbar-expand-sm bg-success navbar-dark">
 			<div class="container-fluid">
-					<ul class="nav">
-					  <a class="navbar-brand" href="#">
-						  <img src="balam.png" alt="" width="65" height="44" class="d-inline-block align-text-top">
-						  Beel Balam
-					  </a>
-				   </ul>
-				  
-				  <ul class="nav justify-content-center">
-					  <h2 style="color:beige; text-align:center; font-family: Papyrus, fantasy;">
-						  Chúunul bin náachil!
-					  </h2>
-				  </ul>			  
+				 <a class="navbar-brand" href="#" style="font-family: Papyrus, fantasy;" >
+					<img src="balam.png" alt="" width="65" height="44" class="d-inline-block align-text-top">
+					Beel Balam
+				</a>
+				<div class="collapse navbar-collapse" style="align-self: center;">
+					<h2 style="color:beige; text-align:center; font-family: Papyrus, fantasy;">
+						Chúunul bin náachil!
+					</h2>	
+			  	</div>
+					  		  
 			</div>
 	  	</nav>
-
-	<article>
-		<section>
-			<h1>
-				Beel Balam
-			</h1>
-			<p>
-				Beel Balam, donde puedes hacer realidad tus vacaciones de ensueño.
-			</p>
-		</section>
+		
 		<section><!--inicio de sesion-->
-			<form action="/action_page.php" class="was-validated">
-				<div class="mb-3 mt-3">
-				  <label for="uname" class="form-label">Nombre de usuario o contraseña:</label>
-				  <input type="text" class="form-control" id="uname" placeholder="Enter username" name="uname" required>
-				  <div class="valid-feedback">Valido.</div>
-				  <div class="invalid-feedback">Datos erroneos.</div>
+			<div class="row">
+				<div class="col-3"></div>
+				<div class="col-6">
+					<div class="container-fluid rounded" style="background-color: beige;">
+						<h2 style="font-family: Papyrus, fantasy;">Iniciar Sesión</h2><br>
+						<div class="mb-3">
+							<label class="form-label" style="font-family: Papyrus, fantasy;">Nombre de usuario o correo electrónico</label>
+							<input type="email" class="form-control" id="formGroupExampleInput">
+						  </div>
+						  <div class="mb-3">
+							<label class="form-label" style="font-family: Papyrus, fantasy;">Contraseña</label>
+							<input type="password" class="form-control" id="formGroupExampleInput2">
+						  </div>
+						  <br>
+					</div>
 				</div>
-				<div class="mb-3">
-				  <label for="pwd" class="form-label">Contraseña:</label>
-				  <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd" required>
-				  <div class="valid-feedback">Valido.</div>
-				  <div class="invalid-feedback">Datos erroneos.</div>
-				</div>
-			  <button type="submit" class="btn btn-primary">Go!</button>
-			</form>
+				</div class="col-3"></div>
+			</div>
+			
 			<a href="iniSesionAdmin.html">Iniciar sesión como administrador</a>>
 			<p>
 				Si aún no tienes una cuenta:
 			</p>
 			<a href="registro.html">Registrate</a>
 		</section>
-	</article>
-	<aside>
-		<h2>Contenido extra</h2>
-		<p>
-			Aquí podemos poner imagenes de varias estaciones o del tren maya
-		</p>
-	</aside>
-	<footer>
-		<h4>
-			Todos los derechos reservados
-		</h4>
-		<p>
-			Para más detalles siguenos en nuestras redes
-		</p>
-		<a href="https://www.youtube.com/channel/UCrz-nM-3coLHqjeA8gnSDtg" target="_BLANK">YouTube</a>
-	</footer>
 </body>
 </html>
