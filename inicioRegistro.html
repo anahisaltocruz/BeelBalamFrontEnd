@@ -12,8 +12,18 @@
 	<link rel="icon" href="jaguar.ico">
 	<link rel="stylesheet" type="text/css" href="normalize.css">
 	
+	<style>
+		body{
+			margin: 0;
+			padding: 0;
+  			background:url("tulum.jpg");
+			background-size: cover;
+  			background-position: center;
+			font-family: sans-serif;
+		}
+	</style>
 </head>
-<body background="tulum.jpg">
+<body>
 		<!--
 		el header se mantiene igual en todas las paginas
 		--> 
@@ -22,14 +32,8 @@
 			<div class="container-fluid">
 				 <a class="navbar-brand" href="#" style="font-family: Papyrus, fantasy;" >
 					<img src="balam.png" alt="" width="65" height="44" class="d-inline-block align-text-top">
-					Beel Balam
-				</a>
-				<div class="collapse navbar-collapse" style="align-self: center;">
-					<h2 style="color:beige; text-align:center; font-family: Papyrus, fantasy;">
-						Chúunul bin náachil!
-					</h2>	
-			  	</div>
-					  		  
+					Beel Balam-Chúunul bin náachil!
+				</a>  		  
 			</div>
 	  	</nav>
 		
@@ -38,26 +42,31 @@
 				<div class="col-3"></div>
 				<div class="col-6">
 					<div class="container-fluid rounded" style="background-color: beige;">
-						<h2 style="font-family: Papyrus, fantasy;">Iniciar Sesión</h2><br>
-						<div class="mb-3">
-							<label class="form-label" style="font-family: Papyrus, fantasy;">Nombre de usuario o correo electrónico</label>
-							<input type="email" class="form-control" id="formGroupExampleInput">
-						  </div>
-						  <div class="mb-3">
-							<label class="form-label" style="font-family: Papyrus, fantasy;">Contraseña</label>
-							<input type="password" class="form-control" id="formGroupExampleInput2">
-						  </div>
+						<h2 class="fw-bold text-center py-5">Iniciar Sesión</h2>
+						<form action="#">
+							<div class="mb-3">
+								<label for="email" class="form-label">Nombre de usuario o correo electrónico</label>
+								<input type="email" class="form-control" id="formGroupExampleInput">
+							</div>
+							<div class="mb-3">
+								<label for="password" class="form-label">Contraseña</label>
+								<input type="password" class="form-control" id="formGroupExampleInput2">
+							</div>
+
+							<div class="">
+								<button type="submit" class="btn btn-primary">Iniciar Sesión</button>
+							</div>
+
+							<div class="my-3">
+								<span>No tienes cuenta? <a href="registro.html">Registrate</a></span>
+							</div>
+						</form>
 						  <br>
 					</div>
 				</div>
 				</div class="col-3"></div>
 			</div>
 			
-			<a href="iniSesionAdmin.html">Iniciar sesión como administrador</a>>
-			<p>
-				Si aún no tienes una cuenta:
-			</p>
-			<a href="registro.html">Registrate</a>
 		</section>
 </body>
 </html>
