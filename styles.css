@@ -1,0 +1,41 @@
+
+body{
+    /*background-color: darkolivegreen;*/
+    background-color: white;
+}
+
+
+/*HEADER*/
+.header{
+    display: flex;
+    justify-content: center;
+}
+.header_h2 {
+    text-align: center;
+    /*color: white;*/
+    color: darkolivegreen;
+    font-family: Papyrus, fantasy;
+    font-size: 4rem;
+}
+
+/*NAV*/
+.navegacion{
+    background-color: olivedrab;
+    padding: 1rem 0;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+.nave_link{
+    font-family: Papyrus, fantasy;
+    color: white;
+    font-size: 2rem;
+}
+.nave_link:hover{
+    color:yellow;
+}
+.nave_h2{
+    font-family: Papyrus, fantasy;
+    color: white;
+    font-size: 2rem;
+}
