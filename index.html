@@ -1,110 +1,268 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title>Beel Bálam</title>
-	<meta charset="utf-8">
-	<meta name="keywords" content="Playa, Sol, Tren Maya, Mar, Cancún">
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> }
-	<link rel="stylesheet" href="styles.css">
-	<link rel="icon" href="jaguar.ico">
-	<link rel="stylesheet" type="text/css" href="normalize.css">
+    <meta charset="UTF-8">
+    <meta name="keywords" content="Playa, Sol, Tren Maya, Mar, Cancún">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beel Balam</title>
+    <meta name="description" content="Página web para comprar boletos del Tren Maya">
+    <link rel="icon" href="img/jaguar.ico">
+
+    <!-- Prefetch -->
+    <link rel="prefetch" href="nosotros.html" as="document">
+
+    <!-- Preload -->
+    <link rel="preload" href="css/normalize.css" as="style">
+    <link rel="stylesheet" href="css/normalize.css">
+
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap"  crossorigin="crossorigin" as="font">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+    
+    <link rel="preload" href="css/style.css" as="style">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-		<!--
-		el header se mantiene igual en todas las paginas
-		--> 
-		<header>
-			<h2 class="header_h2">Beel Balam</h2>
-		</header>
-		<!--barra de navegacion-->
-		<nav class="navegacion">
-			<a class="nave_link" href="registro.html">Resistrate</a>
-			<a class="nave_link" href="inicioRegistro.html">Iniciar sesión</a>
-			<!--
-			<div class="container-fluid">
-					<a class="navbar-brand" href="#" style="font-family: Papyrus, fantasy;" >
-						<img src="balam.png" alt="" width="65" height="44" class="d-inline-block align-text-top">
-						Chúunul bin náachil!
-					</a>
-					<div class="collapse navbar-collapse"></div>
-					<ul class="navbar-nav ml-auto">
-						<li class="nav-item"><a class="nav-link" href="registro.html">Registrate</a></li>
-						<li class="nav-item"><a class="nav-link" href="inicioRegistro.html">Inciar sesión</a></li>
-					</ul>
-					</div>
-				  
-			</div>
-			-->
-	  </nav>
-	  <div id="demo" class="carousel slide" data-bs-ride="carousel">
-		<div class="carousel-inner">
-			<div class="carousel-item active">
-				<img src="tulum1.png" alt="TrenMaya" class="d-block w-100">
-			</div>
-			<div class="carousel-item">
-				<img src="cancun1.png" alt="Tulum" class="d-block w-100">
-			</div>
-			<div class="carousel-item">
-				<img src="trenmay.png" alt="Tulum" class="d-block w-100">
-			</div>
-		</div>
-	</div>
-	<!--
-	<div id="demo" class="carousel slide" data-bs-ride="carousel">
-		<div class="carousel-inner">
-			<div class="carousel-item active">
-				<img src="trenmay.png" alt="TrenMaya" class="d-block w-100">
-			</div>
-			<div class="carousel-item">
-				<img src="trenmay.png" alt="Tulum" class="d-block w-100">
-			</div>
-			<div class="carousel-item">
-				<img src="jag.jpg" alt="Tulum" class="d-block w-100">
-			</div>
-		</div>
-	</div>
-	<article>
-		<section>
-			<h1>
-				Beel Balam - La ruta del Jaguar
-			</h1>
-			<h2>
-				Compra aquí tus boletos para el maravilloso Tren Maya 
-			</h2>
-			<h3>
-				El Tren Maya nos une...
-			</h3>
-			<p>
-				<b>El Tren Maya es un proyecto para mejorar la calidad de vida de las personas, cuidar el ambiente y detonar el desarrollo sustentable.</b>
-			</p>
-			<img src="imgtrenmaya.jpg" alt="Tren Maya" title="Tren Maya">
-			<p>
-				Recorrerá una distancia de 1,500 km aproximadamente y pasará por los estados de Chiapas, Tabasco, Campeche, Yucatán y Quintana Roo.<br>
-				<b><i>El Tren Maya constituye la puerta a ese universo de oportunidades para colaborar en la construcción de un México más equitativo, orgulloso, espiritual y emprendedor</i></b>
-			</p>
-			<video src="trenmaya.mp4" height="400px" width="600px" controls>		
-			</video>
-		</section>
-	</article>
-	<aside>
-		<h2>Contenido extra</h2>
-		<p>
-			Aquí podemos poner cosas "extra"
-		</p>
-	</aside>
-	<footer>
-		<h4>
-			Todos los derechos reservados
-		</h4>
-		<p>
-			Para más detalles siguenos en nuestras redes
-		</p>
-		<a href="https://www.youtube.com/channel/UCrz-nM-3coLHqjeA8gnSDtg" target="_BLANK">YouTube</a>
-	</footer>
-	-->
+
+    <header class="header">
+
+        <div class="contenedor">
+            <div class="barra">
+                <a class="logo" href="index.html">
+                    <h1 class="logo__nombre no-margin centrar-texto"><i>BEEL<span class="logo__bold">BALAM</span></i></h1>
+                </a>
+
+                <nav class="navegacion">
+                    
+                    <a href="nosotros.html" class="navegacion__enlace">Nosotros</a>
+                    <a href="registro.html" class="navegacion__enlace">Registrate</a>
+                    <a href="inicioRegistro.html" class="navegacion__enlace">Iniciar Sesión</a>
+                    <!--
+                        <a href="nosotros.html" class="navegacion__enlace">Nosotros</a>
+                    <a href="cursos.html" class="navegacion__enlace">Cursos</a>
+                    <a href="contacto.html" class="navegacion__enlace">Contacto</a>
+                    -->
+                    
+                </nav>
+            </div>
+        </div>
+        <!--
+            NOTAAAAAAAAAAAAAAAAA: PODEMOS PONER UN MEJOR TEXTO
+        -->
+        <div class="header__texto">
+            <h2 class="no-margin">Beel Balam, donde tus sueños se hacen realidad</h2>
+            <p class="no-margin">¡Chúunul Bín Naachíl!</p>
+        </div>
+    </header>
+
+    <div class="contenedor contenido-principal">
+        <main class="blog">
+            <h3><i> Conoce más sobre el Tren Maya y compra tus boletos</i></h3>
+
+            <article class="entrada">
+                <div class="entrada__imagen">
+                    <picture>
+                        <source loading="lazy"  srcset="img/trenmay.webp" type="image/webp">
+                        <img loading="lazy" src="img/trenmay.jpg" alt="Tren Maya"> 
+                    </picture>
+                </div>
+
+                <div class="entrada__contenido">
+                    <h4 class="no-margin">¿Cómo surge este Proyecto?</h4>
+                    <p>
+                        De acuerdo con la información del gobierno del presidente López Obrador, el proyecto del Tren Maya busca una derrama 
+                        económica local, generación de empleo y distribución del ingreso en la región, preservando las áreas naturales, los 
+                        ecosistemas y el medio ambiente, además de la promoción turística y el resguardo de las culturas indígenas locales.
+                        Con una longitud de aproximadamente mil 525 kilómetros de recorrido en la región sur y sureste del país, el plan abarca 
+                        los estados de Chiapas, Tabasco, Campeche, Yucatán y Quintana Roo y contempla tener construidas 15 de las más de 50 
+                        estaciones para el 2023.
+                        El gobierno hará uso de rieles construidos inicialmente durante el Porfiriato y en periodos presidenciales posteriores, 
+                        para adicionar los nuevos que se requerirán. En cada estado, a excepción de Quintana Roo, ya hay tramos de vía que serán 
+                        aprovechados para todo el proyecto.
+                        Se tiene contemplado la división en tres secciones: la selva con 426 kilómetros, el Golfo con 653 kilómetros y el Caribe 
+                        con 446 y su costo aproximado va de entre los 120 a los 150 mil millones de pesos con financiamiento de inversión pública 
+                        y privada durante los 4 años planeados de construcción. Guardando similitud con lo ocurrido en el Porfiriato donde se 
+                        financió la mayoría de la construcción de los ferrocarriles con inversión nacional y extranjera directa privada.
+                        Tomando en cuenta el indicio de que nuestro país es el sexto más visitado del mundo con 39.3 millones de turistas, 
+                        según datos del barómetro de la Organización Mundial de Turismo (OMT) y citados en la página de la Secretaría de Turismo 
+                        de México, el tren explotaría una de las principales regiones de gran riqueza cultural en el mundo donde se asentó la 
+                        cultura Maya en la Península de Yucatán.
+                    </p>
+                    <a href="https://www.youtube.com/watch?v=k0Y3d2FTDOA" target="_BLANK" class="boton boton--primario">Conoce más sobre el Tren Maya</a>
+                </div>
+            </article>
+
+            <article class="entrada">
+
+                <div class="entrada__contenido">
+                    <h4 class="no-margin">Algunos de los mejores destinos</h4>
+                    <h4><i>Cancún</i></h4>
+                    <p>
+                        Con una increíble belleza natural y una infinidad de opciones de entretenimiento, 
+                        Cancún es uno de los spas naturales más visitados y exclusivos del Caribe Mexicano. 
+                        Millones de familias, parejas, influencers e incluso aquellos que se aventuran a viajar 
+                        a solas eligen este destino para tomar las vacaciones de sus sueños.
+                    </p>
+                </div>
+
+                <div class="entrada__imagen">
+                    <picture>
+                        <source loading="lazy"  srcset="img/cancun2.webp" type="image/webp">
+                        <img loading="lazy" src="img/cancun2.png" alt="Cancún"> 
+                    </picture>
+                </div>
+            </article>
+            <article>
+                <div class="entrada__contenido">
+                    <h4><i>Tulúm</i></h4>
+                    <p>
+                        Tulum es una de las zonas arqueológicas más importantes del estado de Quintana Roo, ya 
+                        que es el único sitio que esta frente al mar Caribe. En la antigüedad tenía el nombre de 
+                        Zamá que significa amanecer, el nombre actual, Tulum, significa “recinto o muralla”. Para 
+                        los antiguos mayas, esta ciudad fue el principal centro de comercio marítimo y terrestre 
+                        de la zona. Actualmente cautiva a todo aquel que lo visita, esta ciudad maya fue construida 
+                        en un acantilado desde donde se aprecian los tonos turquesa del mar Caribe en todo su esplendor.
+                    </p>
+                </div>
+
+                <div class="entrada__imagen">
+                    <picture>
+                        <source loading="lazy"  srcset="img/tulum2.webp" type="image/webp">
+                        <img loading="lazy" src="img/tulum2.png" alt="Tulúm"> 
+                    </picture>
+                </div>
+            </article>
+            <article>
+                <div class="entrada__contenido">
+                    <h4><i>Zona Maya</i></h4>
+                    <p>
+                        La Región Maya abarca actualmente los países de Guatemala, Belice, el occidente de El Salvador 
+                        y Honduras, y los estados mexicanos de Chiapas, Tabasco, Campeche, Yucatán y Quintana Roo.
+                        Todas estas zonas han sido accesibles mediante rutas terrestres y acuáticas, especialmente por 
+                        la existencia de redes de intercambio locales y a larga distancia.
+                    </p>
+                </div>
+
+                <div class="entrada__imagen">
+                    <picture>
+                        <source loading="lazy"  srcset="img/zonamaya.webp" type="image/webp">
+                        <img loading="lazy" src="img/zonamaya.jpeg" alt="Zona Maya"> 
+                    </picture>
+                </div>
+            </article>
+
+            <article>
+                <div class="entrada__contenido">
+                    <h4><i>Bacalar</i></h4>
+                    <p>
+                        Bacalar o Laguna de los Siete Colores, es una laguna ubicada en el estado de Quintana Roo, 
+                        muy cerca de Chetumal, la capital del estado. Su nombre viene del maya Bakhalal que significa 
+                        “cerca o rodeado de carrizos”. De forma circular, la laguna es poco profunda lo que permite 
+                        nadar cómodamente. Alrededor se encuentran establecidas tanto casas privadas como pequeñas 
+                        posadas que permiten acceso a la laguna.
+                    </p>
+                </div>
+
+                <div class="entrada__imagen">
+                    <picture>
+                        <source loading="lazy"  srcset="img/bacalar.webp" type="image/webp">
+                        <img loading="lazy" src="img/bacalar.jpeg" alt="Bacalar"> 
+                    </picture>
+                </div>
+
+            </article>
+        </main>
+
+        <aside class="sidebar">
+            <h3>Rutas del Tren Maya...</h3>
+
+            <ul class="cursos no-padding">
+                <li class="widget-curso">
+                    <h4 class="no-margin">Selva 1</h4>
+                    <p class="widget-curso__label">Precio: 
+                        <span class="widget-curso__info">$70.00</span>
+                    </p>
+                    <p class="widget-curso__label">Recorrido aprox: 
+                        <span class="widget-curso__info">227 km</span>
+                    </p>
+                    <a href="ruta.html" class="boton boton--secundario">Más información sobre la ruta</a>
+                </li>
+
+                <li class="widget-curso">
+                    <h4 class="no-margin">Selva 2</h4>
+                    <p class="widget-curso__label">Precio: 
+                        <span class="widget-curso__info">$120.00</span>
+                    </p>
+                    <p class="widget-curso__label">Recorrido aprox: 
+                        <span class="widget-curso__info">252 km</span>
+                    </p>
+                    <a href="ruta.html" class="boton boton--secundario">Más información sobre la ruta</a>
+                </li>
+
+                <li class="widget-curso">
+                    <h4 class="no-margin">Golfo 1-2</h4>
+                    <p class="widget-curso__label">Precio: 
+                        <span class="widget-curso__info">$50.00</span>
+                    </p>
+                    <p class="widget-curso__label">Recorrido aprox: 
+                        <span class="widget-curso__info">413 km</span>
+                    </p>
+                    <a href="ruta.html" class="boton boton--secundario">Más información sobre la ruta</a>
+                </li>
+
+                <li class="widget-curso">
+                    <h4 class="no-margin">Golfo 3</h4>
+                    <p class="widget-curso__label">Precio: 
+                        <span class="widget-curso__info">$150.00</span>
+                    </p>
+                    <p class="widget-curso__label">Recorrido aprox: 
+                        <span class="widget-curso__info">186 km</span>
+                    </p>
+                    <a href="ruta.html" class="boton boton--secundario">Más información sobre la ruta</a>
+                </li>
+
+                <li class="widget-curso">
+                    <h4 class="no-margin">Caribe 1</h4>
+                    <p class="widget-curso__label">Precio: 
+                        <span class="widget-curso__info">$70.00</span>
+                    </p>
+                    <p class="widget-curso__label">Recorrido aprox: 
+                        <span class="widget-curso__info">237 km</span>
+                    </p>
+                    <a href="ruta.html" class="boton boton--secundario">Más información sobre la ruta</a>
+                </li>
+
+                <li class="widget-curso">
+                    <h4 class="no-margin">Caribe 2</h4>
+                    <p class="widget-curso__label">Precio: 
+                        <span class="widget-curso__info">$150.00</span>
+                    </p>
+                    <p class="widget-curso__label">Recorrido aprox: 
+                        <span class="widget-curso__info">110 km</span>
+                    </p>
+                    <a href="ruta.html" class="boton boton--secundario">Más información sobre la ruta</a>
+                </li>
+            </ul>
+        </aside>
+    </div>
+
+    <footer class="footer">
+        <div class="contenedor">
+            <div class="barra">
+                <a class="logo" href="index.html">
+                    <h1 class="logo__nombre no-margin centrar-texto"><i>BEEL<span class="logo__bold">BALAM</span></i></h1>
+                </a>
+
+                <nav class="navegacion">
+                    <p class="centrar-texto">
+                        TODOS LOS DERECHOS RESERVADOS
+                    </p>
+                    
+                    
+                </nav>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="js/modernizr.js"></script>
 </body>
 </html>
