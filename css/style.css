@@ -108,6 +108,9 @@ img {
 .logo__bold {
     font-weight: 700;
 }
+.nave{
+    background-color: #000000;
+}
 @media (min-width: 768px) {
     .navegacion {
         display: flex;

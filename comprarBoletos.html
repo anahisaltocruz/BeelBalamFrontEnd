@@ -1,48 +1,67 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 	<title>Beel Bálam</title>
 	<meta charset="utf-8">
 	<meta name="keywords" content="Playa, Sol, Tren Maya, Mar, Cancún">
 	<link rel="icon" href="jaguar.ico">
-	<link rel="stylesheet" type="text/css" href="normalize.css">
+
+	<!--Bootstrap-->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+
+    <!-- Prefetch -->
+    <link rel="prefetch" href="nosotros.html" as="document">
+
+    <!-- Preload -->
+    <link rel="preload" href="css/normalize.css" as="style">
+    <link rel="stylesheet" href="css/normalize.css">
+
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap"  crossorigin="crossorigin" as="font">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+    
+    <link rel="preload" href="css/style.css" as="style">
+    <link rel="stylesheet" href="css/style.css">
+
+
 </head>
 <body>
-	<header>
-		<!--
-		el header se mantiene igual en todas las paginas
-		--> 
-		<nav>
-			<ul>
-				<li>
-					<img src="jag.jpg" alt="Beel Balam">
-				</li>
-				<li>
-					Donde los sueños se hacen realidad...
-				</li>
-				<li><a href="index.html">Inicio</a></li>
-				<li><a href="micuenta.html"></a>Mi cuenta</li>
-			</ul>
-		</nav>
+	<header class="header">
+		<div class="contenedor">
+			<nav class="nave">
+				<a class="logo" href="index.html">
+					<h1 class="logo_nombre no-margin centrar-texto"><i>BEEL<span class="logo_bold">BALAM</span></i></h1>
+				</a>
+				<a href="#" class="navegacion_enlace">Mi perfil</a>
+			</nav>
+		</div>
 	</header>
-	<article>
-		<section>
-			<h2>
-				Horios disponibles
-			</h2>
-			<p>
-				Aqui podemos poner una tabla o algo parecido para poner los viajes disponibles
-			</p>
-		</section>
-	</article>
-	<footer>
-		<h4>
-			Todos los derechos reservados
-		</h4>
-		<p>
-			Para más detalles siguenos en nuestras redes
-		</p>
-		<a href="https://www.youtube.com/channel/UCrz-nM-3coLHqjeA8gnSDtg" target="_BLANK">YouTube</a>
-	</footer>
+	<section>
+		<div class="row">
+			<div class="col-3"></div>
+			<div class="col-3"></div>
+			<div class="col-3">
+				<form action="#">
+					<div class="mb-3">
+						<label for="text" class="form-label">Destino</label>
+						<input type="text" placeholder="Destino" class="form-control" id="dest">
+					</div>
+					<div class="mb-3">
+						<label for="Fecha" class="form-label">Fecha</label>
+						<input type="date" placeholder="Fecha" class="form-control" id="date">
+					</div>
+					<div class="mb-3">
+						<label for="Hora" class="form-label">Hora</label>
+						<input type="datetime" placeholder="Hora" class="form-control" id="hours">
+					</div>
+				</form>
+			</div>	
+			<div class="col-3"></div>		
+		</div>
+	</section>
 </body>
 </html>
