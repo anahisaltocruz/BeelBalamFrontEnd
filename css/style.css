@@ -78,7 +78,10 @@ img {
     background-position: center center;/*centrado vertical y horizontalente*/
 }
 .header__sec{
-    background-color: var(--primario);
+	background-color:var(--primario);
+	background-size: cover;/*para que se adapte a diferentes tamaños*/
+    background-repeat: no-repeat;
+    background-position: center center;/*centrado vertical y horizontalente*/
 }
 .header__texto {
    text-align: center;
@@ -111,9 +114,7 @@ img {
 .logo__bold {
     font-weight: 700;
 }
-.nave{
-    background-color: #000000;
-}
+
 @media (min-width: 768px) {
     .navegacion {
         display: flex;
