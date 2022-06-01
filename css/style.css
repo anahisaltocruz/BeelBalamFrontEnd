@@ -24,8 +24,14 @@ body {
 
 /** Globales **/
 .contenedor {
-    width: min(90%, 120rem);
+    width: min(90%, 90rem);
     margin: 0 auto; /*centrar en automático*/
+}
+.contenedor__sec{
+    width: min(60%, 120rem);
+}
+.contenedor__ter{
+    width: min(50%, 100rem);
 }
 a {
     text-decoration: none;
@@ -63,6 +69,7 @@ img {
 
 /** Header **/
 /*pendienteeeeeeeeeeeeeeeeeeeeeee*/
+/*
 .webp .header {
     background-image: url(https://derechoanimal.info/sites/default/files/styles/proportional_l/public/img/Jaguar.jpg?itok=AOIFZwUQ);
 }
@@ -72,17 +79,20 @@ img {
 /*pendienteeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee (arriba)*/
 
 .header {
+    background-image: url(https://derechoanimal.info/sites/default/files/styles/proportional_l/public/img/Jaguar.jpg?itok=AOIFZwUQ);
     height: 60rem;
     background-size: cover;/*para que se adapte a diferentes tamaños*/
     background-repeat: no-repeat;
     background-position: center center;/*centrado vertical y horizontalente*/
 }
+/*
 .header__sec{
 	background-color:var(--primario);
 	background-size: cover;/*para que se adapte a diferentes tamaños*/
-    background-repeat: no-repeat;
+    /*background-repeat: no-repeat;
     background-position: center center;/*centrado vertical y horizontalente*/
-}
+/*
+}*/
 .header__texto {
    text-align: center;
    color: var(--blanco);
@@ -215,10 +225,41 @@ img {
         column-gap: 2rem;
     }
 }
-
-
-
-
+/*para la pagina de inicioRegistro.html*/
+.sesion-bg{
+    background-image: url(https://cloudfront-us-east-1.images.arcpublishing.com/infobae/WLRAMI2F5NBRFFCCEI24T6VDHE.jpg);
+    height: 30rem;
+    background-size: cover;
+}
+/*para la pagina de registro.html*/
+.registro-bg{
+    background-image: url(https://noticiaspia.com.ar/wp-content/uploads/cultura-maya-mesoamerica-precolombino-historia-mexico-e1567715881268-740x370.jpg);
+    height: 30rem;
+    background-size: cover;
+}
+/*formularios*/
+.formulario{
+    background-color: var(--blanco);
+    margin: -5rem auto 0 auto;
+    width: 95%;
+    padding: 5rem; 
+}
+.formulario__margin-top{
+    margin: -10rem auto 0 auto;
+}
+.campo{
+    display: flex;
+    margin-bottom: 2rem;
+}
+.campo__label{
+    flex: 0 0 21rem;
+    text-align: right;
+    padding-right: 2rem;
+}
+.campo__field{
+    flex: 1;
+    border: 1px solid var(--gris);
+}
 /*para ruta.html*/
 
 .ruta {
