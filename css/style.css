@@ -79,11 +79,19 @@ img {
 /*pendienteeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee (arriba)*/
 
 .header {
-    background-image: url(https://derechoanimal.info/sites/default/files/styles/proportional_l/public/img/Jaguar.jpg?itok=AOIFZwUQ);
     height: 60rem;
     background-size: cover;/*para que se adapte a diferentes tamaños*/
     background-repeat: no-repeat;
     background-position: center center;/*centrado vertical y horizontalente*/
+}
+.header__bgi{
+    background-image: url(https://derechoanimal.info/sites/default/files/styles/proportional_l/public/img/Jaguar.jpg?itok=AOIFZwUQ);
+}
+.header__bgc{
+    background-color: var(--primario);
+}
+.hedader__height-mid{
+    height: 10rem;
 }
 /*
 .header__sec{
@@ -239,7 +247,7 @@ img {
 }
 /*formularios*/
 .formulario{
-    background-color: var(--blanco);
+    background-color: var(--gris);
     margin: -5rem auto 0 auto;
     width: 95%;
     padding: 5rem; 
