@@ -245,6 +245,12 @@ img {
     height: 30rem;
     background-size: cover;
 }
+/*para la pagina iniSesionAdmin.html*/
+.adminsesion-bg{
+    background-image: url(https://realestatemarket.com.mx/images/2021/03-marzo/0803/Estacin_Chichn_Itz-Vista_exterior_.gif);
+    height: 30rem;
+    background-size: cover;
+}
 /*formularios*/
 .formulario{
     background-color: var(--gris);
@@ -263,6 +269,12 @@ img {
     flex: 0 0 21rem;
     text-align: right;
     padding-right: 2rem;
+}
+.campo__label-flex1{
+    flex: 0 0 12rem;
+}
+.campo__label-flex2{
+    flex: 0 0 21rem;
 }
 .campo__field{
     flex: 1;

@@ -1,77 +1,100 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Beel Bálam</title>
-	<meta charset="utf-8">
-	<meta name="keywords" content="Playa, Sol, Tren Maya, Mar, Cancún">
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-	<link rel="icon" href="jaguar.ico">
-	<link rel="stylesheet" type="text/css" href="normalize.css">
+	<meta charset="UTF-8">
+    <meta name="keywords" content="Playa, Sol, Tren Maya, Mar, Cancún">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beel Balam</title>
+    <meta name="description" content="Página web para comprar boletos del Tren Maya">
+    <link rel="icon" href="img/jaguar.ico">
+
+
+    <!-- Prefetch -->
+    <link rel="prefetch" href="nosotros.html" as="document">
+
+    <!-- Preload -->
+    <link rel="preload" href="css/normalize.css" as="style">
+    <link rel="stylesheet" href="css/normalize.css">
+
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap"  crossorigin="crossorigin" as="font">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+    
+    <link rel="preload" href="css/style.css" as="style">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 		<!--
 		el header se mantiene igual en todas las paginas
 		--> 
-		<nav class="navbar navbar-expand-sm bg-secondary navbar-dark">
-			<div class="container-fluid">
-					<ul class="nav">
-					  <a class="navbar-brand" href="#">
-						  <img src="balam.png" alt="" width="65" height="44" class="d-inline-block align-text-top">
-						  Beel Balam
-					  </a>
-				   </ul>
-				  
-				  <ul class="nav justify-content-center">
-					  <h2 style="color:beige; text-align:center; font-family: Papyrus, fantasy;">
-						  Chúunul bin náachil!
-					  </h2>
-				  </ul>			  
+		<header class="header hedader__height-mid header__bgc">
+
+			<div class="contenedor">
+				<div class="barra">
+					<a class="logo" href="index.html">
+						<h1 class="logo__nombre no-margin centrar-texto"><i>BEEL<span class="logo__bold">BALAM</span></i></h1>
+					</a>
+	
+					<nav class="navegacion">
+						
+						<a href="nosotros.html" class="navegacion__enlace">Nosotros</a>
+						<!--
+						<a href="registro.html" class="navegacion__enlace">Registrate</a>
+						<a href="inicioRegistro.html" class="navegacion__enlace">Iniciar Sesión</a>
+						-->
+						<!--
+							<a href="nosotros.html" class="navegacion__enlace">Nosotros</a>
+						<a href="cursos.html" class="navegacion__enlace">Cursos</a>
+						<a href="contacto.html" class="navegacion__enlace">Contacto</a>
+						-->
+						
+					</nav>
+				</div>
 			</div>
-	  	</nav>
-	<article>
-		<section>
-			<img src="tulum.jpg" alt="Tulum, Quintana Roo" title="Tulum">
-		</section>
-		<section>
-			<h1>
-				Beel Balam
-			</h1>
-			<p>
-				Beel Balam, donde puedes hacer realidad tus vacaciones de ensueño.
-			</p>
-		</section>
-		<section><!--inicio de sesion del administrador (y vendedores)-->
-			<form>
-				<h3>
-					Usuario:
-				</h3>
-				<input type="text" name="nombreUsuarioAdmin">
-				<h3>
-					Contraseña:
-				</h3>
-				<input type="password" name="contraseniaAdmin">
-				<input type="button" name="inicioSesionAdmin" value="Iniciar Sesión">
-				<a href="index.html">Auxiliar (Iniciar Sesión)</a>
+			<!--
+				NOTAAAAAAAAAAAAAAAAA: PODEMOS PONER UN MEJOR TEXTO
+			-->
+			<!--
+			<div class="header__texto">
+				<h2 class="no-margin">Beel Balam, donde tus sueños se hacen realidad</h2>
+				<p class="no-margin">¡Chúunul Bín Naachíl!</p>
+			</div>
+			-->
+		</header>
+		<main class="contenedor contenedor__ter">
+			<h2 class="centrar-texto">Iniciar Sesión</h2>
+			<div class="adminsesion-bg"></div>
+			<form class="formulario">
+				<div class="campo">
+					<label class="campo__label campo__label-flex1" for="email">E-mail</label>
+					<input class="campo__field" type="email" placeholder="Tu E-mail" id="email">
+				</div>
+				<div class="campo">
+					<label class="campo__label campo__label-flex1" for="password">Contraseña</label>
+					<input class="campo__field" type="password" placeholder="Tu Contraseña" id="password">
+				</div>
+				<div class="campo">
+					<input type="submit" value="Enviar" class="boton boton--primario">
+				</div>
 			</form>
-	</article>
-	<aside>
-		<h2>Contenido extra</h2>
-		<p>
-			Aquí podemos poner imagenes de varias estaciones o del tren maya
-		</p>
-	</aside>
-	<footer>
-		<h4>
-			Todos los derechos reservados
-		</h4>
-		<p>
-			Para más detalles siguenos en nuestras redes
-		</p>
-		<a href="https://www.youtube.com/channel/UCrz-nM-3coLHqjeA8gnSDtg" target="_BLANK">YouTube</a>
+		</main>
+	<article>
+		
+	<footer class="footer">
+		<div class="contenedor">
+			<div class="barra">
+				<a class="logo" href="index.html">
+					<h1 class="logo__nombre no-margin centrar-texto"><i>BEEL<span class="logo__bold">BALAM</span></i></h1>
+				</a>
+	
+				<nav class="navegacion">
+					<p class="centrar-texto">
+						TODOS LOS DERECHOS RESERVADOS
+					</p>
+				</nav>
+			</div>
+		</div>
 	</footer>
+		
+	<script src="js/modernizr.js"></script>
 </body>
 </html>
